@@ -1,11 +1,12 @@
 {
   "name": "expo-confetti",
-  "version": "0.1.202",
+  "version": "0.1.203",
   "main": "ConfettiLibrary.js",
   "dependencies": {
     "@shopify/react-native-skia": "0.1.196",
     "react-native-gesture-handler": "^2.12.1",
     "react-native-reanimated": "~3.3.0",
     "react-native-redash": "^18.1.0"
-  }
+  },
+  "keywords": ["confetti", "react-native-confetti", "expo-confetti", "react native"]
 }
