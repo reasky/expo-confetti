@@ -1,6 +1,6 @@
 {
   "name": "expo-confetti",
-  "version": "0.1.204",
+  "version": "0.1.205",
   "main": "ConfettiLibrary.js",
   "dependencies": {
     "@shopify/react-native-skia": "0.1.196",

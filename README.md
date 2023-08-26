@@ -1,16 +1,11 @@
 
 # Expo-confetti
 
-Animated star rating component for React Native (Expo). Compatible with iOS, Android.
+Animated confetti component for React Native (Expo). Compatible with iOS, Android.
 Written in JavaScript.
 
 ![Alt Text](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM28ydXl1a3Nub2FoZHp3N2VhMG5zc2prZGdtd2VpY2h4c3hpbDEyNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6JVuTslAjabsrjWSWT/giphy.gif)
 
-
-# Expo-confetti
-
-Animated star rating component for React Native (Expo). Compatible with iOS, Android.
-Written in JavaScript.
 
 ## Installation
 
