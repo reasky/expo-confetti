@@ -4,8 +4,6 @@ import { Canvas } from "@shopify/react-native-skia";
 import { Group, RoundedRect, runTiming, Skia, useComputedValue, useValue, vec } from "@shopify/react-native-skia";
 import { processTransform3d, toMatrix3 } from "react-native-redash";
 
-const colors = ["#deb7ff", "#c785ec", "#a86add", "#8549a7", "#634087"];
-
 const NUM_OF_CONFETTI = 70;
 
 const relativeSin = (yPosition, offsetId) => {
@@ -14,7 +12,7 @@ const relativeSin = (yPosition, offsetId) => {
   return offsetId % 2 === 0 ? rand : -otherrand;
 };
 
-export const startAnimation = (setConfettiPieces) => {
+export const startAnimation = (setConfettiPieces, colors = ["#deb7ff", "#c785ec", "#a86add", "#8549a7", "#634087"]) => {
   const { width, height } = Dimensions.get("window");
 
   const pieces = [];
@@ -34,12 +32,12 @@ export const startAnimation = (setConfettiPieces) => {
   setConfettiPieces(pieces);
 };
 
-const ConfettiLibrary = ({ confettiPieces, setConfettiPieces }) => {
+const ConfettiLibrary = ({ confettiPieces, setConfettiPieces, colors = ["#deb7ff", "#c785ec", "#a86add", "#8549a7", "#634087"] }) => {
   return (
     <View style={styles.container}>
       <Canvas style={styles.canvas}>
         {confettiPieces.map((offset) => (
-          <ConfettiPiece key={offset.offsetId} {...offset} />
+          <ConfettiPiece key={offset.offsetId} colors={colors} {...offset} />
         ))}
       </Canvas>
     </View>
@@ -66,6 +64,7 @@ const styles = StyleSheet.create({
 export default ConfettiLibrary;
 
 const ConfettiPiece = ({
+  colors,
   startingXOffset,
   startingYOffset,
   offsetId,

@@ -44,12 +44,12 @@ export default function App() {
   const [confettiPieces, setConfettiPieces] = useState([]);
 
   const handleStartAnimation = () => {
-    startAnimation(setConfettiPieces);
+    startAnimation(setConfettiPieces, ["#deb7ff", "#c785ec", "#a86add", "#8549a7", "#634087"]);
   };
 
   return (
     <View style={styles.container}>
-      <ConfettiCanvas confettiPieces={confettiPieces} />
+      <ConfettiCanvas confettiPieces={confettiPieces} colors={["#deb7ff", "#c785ec", "#a86add", "#8549a7", "#634087"]} />
       <View style={styles.containerButton}>
         <TouchableOpacity onPress={handleStartAnimation}>
           <Text>Click for start animation</Text>
@@ -78,6 +78,7 @@ const styles = StyleSheet.create({
 | Name | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `confettiPieces` | `array` | **Required**.|
+| `colors` | `array` | Custom colors for confetti.|
 
 
 ## Authors
