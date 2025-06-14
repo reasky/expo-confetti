@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
 
 ## Authors
 
-- [@reaskydev](https://www.github.com/reaskydev)
+- [reasky](https://www.github.com/reasky)
 
 
 ## Feedback
